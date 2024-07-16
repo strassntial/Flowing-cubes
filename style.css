@@ -1,0 +1,144 @@
+.container{
+    height: 100vh;
+    background-color: rgb(255, 0, 136);
+    padding: 30px 50PX;
+    display: flex;
+    justify-content: space-between;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.sec1 div{
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20PX;
+}
+
+.sec2 div{
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20PX;
+}
+
+.cube1{
+    background-color: antiquewhite;
+    transition: 5s;
+    transition-timing-function: cubic-bezier();
+}
+.cube2{
+    background-color: rgb(22, 235, 231);
+    transition: 5s;
+    transition-timing-function: linear;
+}
+.cube3{
+    background-color: rgb(7, 234, 124);
+    transition: 5s;
+    transition-timing-function: ease-in;
+}
+.cube4{
+    background-color: rgb(237, 242, 110);
+    transition: 5s;
+    transition-timing-function: ease-out;
+}
+.cube5{
+    background-color: rgb(232, 127, 234);
+    transition: 5s;
+    transition-timing-function: ease-in-out;
+}
+.cube6{
+    background-color: rgb(123, 227, 187);
+    transition: 5s;
+    transition-timing-function: ease;
+}
+
+/* Transition */
+.cube1:hover{
+transform: translateX(800px);
+background-color: aqua;
+}
+.cube2:hover{
+    transform: translateX(800px);
+    background-color: rgb(255, 0, 217);
+}
+
+.cube3:hover{
+    transform: translateX(800px);
+    background-color: rgb(255, 140, 0);
+}
+.cube4:hover{
+    transform: translateX(800px);
+    background-color: rgb(0, 255, 8);
+}
+.cube5:hover{
+    transform: translateX(800px);
+    background-color: rgb(111, 0, 255);
+}
+.cube6:hover{
+    transform: translateX(800px);
+    background-color: rgb(234, 255, 0);
+}
+
+
+/* Animation */
+.cube7{
+    background-color: rgb(123, 227, 187);
+    animation: move 10s infinite;
+}
+.cube8{
+    background-color: rgb(232, 127, 234);
+    animation: move2 5s infinite;
+}
+.cube9{
+    background-color: rgb(237, 242, 110);
+    animation: move 10s infinite;
+}
+.cube10{
+    
+    background-color: rgb(7, 234, 124);
+    animation: move2 5s infinite;
+}
+.cube11{
+
+    background-color: rgb(22, 235, 231);
+    animation: move 10s infinite;
+}
+.cube12{
+    background-color: antiquewhite;
+    animation: move2 5s infinite;
+}
+
+@keyframes move{
+    0%{
+        transform: translatex(20px);
+    }
+    25%{
+        transform: translatex(-150px);
+        background-color: aqua;
+    }
+    50%{
+        transform: translatex(-300px);
+        background-color: khaki;
+    }
+    75%{
+        transform: translatex(-150px);
+        background-color: hotpink
+    }
+    100%{
+        transform: translatex(20px);
+        background-color: rgb(216, 229, 73)
+    }
+    
+}
+@keyframes move2{
+    0%{
+        transform: translatex(20px);
+    }
+   
+    50%{
+        transform: translatex(-300px);
+        background-color: rgb(0, 255, 132);
+    }
+    100%{
+        transform: translatex(20px);
+        background-color: rgb(0, 242, 255);
+    }
+}
